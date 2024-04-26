@@ -33,16 +33,17 @@ const Header = ({ tabs, handleTabChange }) => {
     >
       <Image
         src={logo}
-        w={{ base: 'auto', md: '42px', lg: '50px' }}
-        h={{ base: 'auto', md: '42px', lg: '50px' }}
+        mb={{ '2xl': '24px' }}
+        w={{ base: 'auto', md: '42px', lg: '50px', xl: '104px' }}
+        h={{ base: 'auto', md: '42px', lg: '50px', xl: '104px' }}
       />
 
       <Divider
         position='absolute'
         top='40%'
-        right={{ lg: '74%', xl: '50%' }}
+        right={{ lg: '71%', xl: '50%', '2xl': '45%' }}
         zIndex='1'
-        w={{ lg: '12%', xl: '38%' }}
+        w={{ lg: '16%', xl: '38%', '2xl': '44%' }}
         opacity='0.3'
       />
 
@@ -52,7 +53,7 @@ const Header = ({ tabs, handleTabChange }) => {
         backgroundColor='transparent'
         backdropFilter='blur(18px)'
       >
-        <TabList borderBottomStyle='none' gap='24px'>
+        <TabList borderBottomStyle='none' gap={{ lg: '24px', '2xl': '68px' }}>
           {tabs.map((tab, index) => (
             <NavLink to={tab.path} key={index}>
               <Tab

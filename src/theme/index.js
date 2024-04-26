@@ -4,7 +4,7 @@ const breakpoints = {
   md: '768px',
   lg: '1024px',
   xl: '1440px',
-  '2xl': '2560px',
+  '2xl': '1600px',
 };
 
 export const coreTheme = {
