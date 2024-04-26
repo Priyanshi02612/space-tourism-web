@@ -11,12 +11,12 @@ export const coreTheme = {
   breakpoints,
   colors: {
     color: {
-      gray: '#4B4F57',
+      gray: { dark: '#494B54', light: '#D1D4EF' },
     },
   },
   fonts: {
     body: `"Barlow", sans-serif`,
-    heading: `"Jost", sans-serif`,
+    heading: `"Noto Sans", sans-serif`,
     main: `"Forum", serif`,
   },
 };
