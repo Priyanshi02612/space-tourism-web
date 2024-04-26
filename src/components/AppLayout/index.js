@@ -53,7 +53,11 @@ const AppLayout = () => {
         lg: `url(${backgrounds[activeTab].desktop})`,
       }}
       backgroundSize='cover'
-      h='100vh'
+      h={{
+        base: '100vh',
+        md: `${window.innerHeight}px`,
+        lg: `${window.innerHeight}px`,
+      }}
       color='white'
       pt={{ base: '20px', md: '0px', lg: '54px' }}
     >

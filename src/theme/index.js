@@ -17,6 +17,6 @@ export const coreTheme = {
   fonts: {
     body: `"Barlow", sans-serif`,
     heading: `"Noto Sans", sans-serif`,
-    main: `"Forum", serif`,
+    main: `"Cormorant Garamond", serif`,
   },
 };
