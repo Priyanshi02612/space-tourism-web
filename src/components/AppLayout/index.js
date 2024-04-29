@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Header';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
-import backgroundImage0 from '../../assets/shared/black_image.jpg';
+import backgroundImage0 from '../../assets/shared/black-image.jpg';
 import homeDesktop from '../../assets/home/background-home-desktop.jpg';
 import homeTablet from '../../assets/home/background-home-tablet.jpg';
 import homeMobile from '../../assets/home/background-home-mobile.jpg';
