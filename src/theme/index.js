@@ -16,7 +16,7 @@ export const coreTheme = {
   },
   fonts: {
     body: `"Barlow", sans-serif`,
-    heading: `"Noto Sans", sans-serif`,
+    heading: `"Pathway Gothic One", sans-serif`,
     main: `"Cormorant Garamond", serif`,
   },
 };

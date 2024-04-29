@@ -20,7 +20,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/shared/logo.svg';
 import { GrMenu } from 'react-icons/gr';
 
-const Header = ({ tabs, handleTabChange }) => {
+const Header = ({ tabs, tabIndex, handleTabChange }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -48,10 +48,11 @@ const Header = ({ tabs, handleTabChange }) => {
       />
 
       <Tabs
+        index={tabIndex}
         display={{ base: 'none', md: 'block' }}
         p={{ md: '40px 32px', lg: '40px 80px' }}
         backgroundColor='transparent'
-        backdropFilter='blur(18px)'
+        backdropFilter='blur(24px)'
       >
         <TabList borderBottomStyle='none' gap={{ lg: '24px', '2xl': '68px' }}>
           {tabs.map((tab, index) => (
@@ -67,7 +68,7 @@ const Header = ({ tabs, handleTabChange }) => {
                   fontWeight='700'
                   display={{ md: 'none', lg: 'block' }}
                 >
-                  {tab.id}
+                  0{tab.id}
                 </Text>
 
                 <Text fontFamily='heading' fontWeight='200'>

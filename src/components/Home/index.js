@@ -7,7 +7,7 @@ const Home = () => {
       flexDirection={{ base: 'column', lg: 'row' }}
       alignItems='center'
       justifyContent={{ base: 'normal', lg: 'space-between' }}
-      gap={{ base: '50px', md: '100px', lg: '0px' }}
+      gap={{ base: '170px', lg: '7px', xl: '170px' }}
       m={{
         base: '64px 52px 0px',
         md: '15px 40px 0px',
@@ -20,11 +20,12 @@ const Home = () => {
           fontSize={{ base: '20px', md: '32px' }}
           fontFamily='heading'
           textAlign={{ base: 'center', lg: 'left' }}
+          color='color.gray.light'
         >
           So, you want to travel to
         </Text>
         <Text
-          fontSize={{ base: '64px', md: '144px' }}
+          fontSize={{ base: '64px', md: '98px', xl: '144px' }}
           fontFamily='heading'
           fontWeight='100'
           textAlign={{ base: 'center', lg: 'left' }}
@@ -35,6 +36,7 @@ const Home = () => {
           fontSize={{ base: '14px', md: '18px' }}
           fontFamily='heading'
           textAlign={{ base: 'center', lg: 'left' }}
+          color='color.gray.light'
         >
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
@@ -43,20 +45,26 @@ const Home = () => {
         </Text>
       </Box>
       <Box mt={{ lg: '50px' }}>
-        <Flex
-          alignItems='center'
-          justifyContent='center'
-          fontSize='42px'
-          fontFamily='heading'
-          w={{ base: '234px', md: '250px' }}
-          h={{ base: '234px', md: '250px' }}
-          backgroundColor='white'
+        <Box
+          p='34px'
+          _hover={{ backgroundColor: '#ffffff47', cursor: 'pointer' }}
           borderRadius='50%'
-          color='black'
-          textAlign='center'
         >
-          EXPLORE
-        </Flex>
+          <Flex
+            alignItems='center'
+            justifyContent='center'
+            fontSize='42px'
+            fontFamily='heading'
+            w={{ base: '234px', md: '250px' }}
+            h={{ base: '234px', md: '250px' }}
+            backgroundColor='white'
+            borderRadius='50%'
+            color='black'
+            textAlign='center'
+          >
+            EXPLORE
+          </Flex>
+        </Box>
       </Box>
     </Flex>
   );
