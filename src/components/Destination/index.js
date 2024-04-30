@@ -69,7 +69,6 @@ const Destination = () => {
     >
       <Flex
         gap='12px'
-        justifyContent={{ base: 'center', lg: 'left' }}
         fontSize='20px'
         fontFamily='heading'
         ms={{ lg: '96px' }}
@@ -98,8 +97,8 @@ const Destination = () => {
               '2xl': '74px 160px 0px',
             }}
             maxW={{
-              base: '254px',
-              md: '700px',
+              base: '186px',
+              md: '270px',
               lg: '363px',
               xl: '1060px',
               '2xl': '750px',

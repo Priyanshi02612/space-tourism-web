@@ -25,10 +25,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Space tourism website</title>
+    <style>
+      html {
+        background-color: #0B0E16;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      document.documentElement.style.height = window.innerHeight;
+      document.body.style.height = window.innerHeight;
+      document.getElementById('root').style.height = window.innerHeight;
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

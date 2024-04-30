@@ -39,7 +39,6 @@ const backgrounds = {
 };
 
 const AppLayout = () => {
-  const [activeTab, setActiveTab] = useState('HOME');
   const [backgroundImage, setBackgroundImage] = useState(backgroundImage0);
 
   const location = useLocation();
@@ -88,10 +87,6 @@ const AppLayout = () => {
     return;
   }, [location.pathname]);
 
-  const handleTabChange = (tabName) => {
-    setActiveTab(tabName);
-  };
-
   return (
     <Box
       backgroundColor='black'
@@ -108,11 +103,7 @@ const AppLayout = () => {
       color='white'
       pt={{ base: '20px', md: '0px', lg: '54px' }}
     >
-      <Header
-        tabs={tabs}
-        tabIndex={tabIndex}
-        handleTabChange={handleTabChange}
-      />
+      <Header tabs={tabs} tabIndex={tabIndex} />
       <Outlet />
     </Box>
   );

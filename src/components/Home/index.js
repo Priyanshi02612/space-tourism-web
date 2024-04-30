@@ -7,7 +7,7 @@ const Home = () => {
       flexDirection={{ base: 'column', lg: 'row' }}
       alignItems='center'
       justifyContent={{ base: 'normal', lg: 'space-between' }}
-      gap={{ base: '170px', lg: '7px', xl: '170px' }}
+      gap={{ base: '120px', lg: '7px', xl: '170px' }}
       m={{
         base: '64px 52px 0px',
         md: '15px 40px 0px',

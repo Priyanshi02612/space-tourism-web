@@ -1,0 +1,34 @@
+.customCSS div[class*='carousel-slider'] ul[class*='control-dots'] {
+  text-align: left !important;
+  margin: 20px 0px 0px 0px !important;
+  bottom: 40%;
+}
+
+.customCSS
+  div[class*='carousel-slider']
+  ul[class*='control-dots']
+  li[class*='dot'] {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .customCSS div[class*='carousel-slider'] ul[class*='control-dots'] {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customCSS div[class*='carousel-slider'] ul[class*='control-dots'] {
+    text-align: center !important;
+    bottom: 0px;
+  }
+
+  .customCSS
+    div[class*='carousel-slider']
+    ul[class*='control-dots']
+    li[class*='dot'] {
+    width: 8px;
+    height: 8px;
+  }
+}

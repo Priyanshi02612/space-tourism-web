@@ -20,7 +20,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/shared/logo.svg';
 import { GrMenu } from 'react-icons/gr';
 
-const Header = ({ tabs, tabIndex, handleTabChange }) => {
+const Header = ({ tabs, tabIndex }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -61,7 +61,6 @@ const Header = ({ tabs, tabIndex, handleTabChange }) => {
                 pb='20px'
                 _selected={{ color: 'white', borderBottomColor: 'white' }}
                 gap='12px'
-                onClick={() => handleTabChange(tab.name)}
               >
                 <Text
                   fontFamily='heading'
@@ -108,7 +107,6 @@ const Header = ({ tabs, tabIndex, handleTabChange }) => {
                   color='white'
                   onClick={() => {
                     onClose();
-                    handleTabChange(tab.name);
                   }}
                 >
                   {tab.name}
