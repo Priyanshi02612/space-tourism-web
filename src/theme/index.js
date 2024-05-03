@@ -11,7 +11,7 @@ export const coreTheme = {
   breakpoints,
   colors: {
     color: {
-      gray: { dark: '#494B54', light: '#D1D4EF' },
+      gray: { dark: '#494B54', light: '#8c90b7' },
     },
   },
   fonts: {

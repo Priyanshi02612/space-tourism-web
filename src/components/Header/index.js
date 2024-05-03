@@ -16,12 +16,13 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/shared/logo.svg';
 import { GrMenu } from 'react-icons/gr';
 
 const Header = ({ tabs, tabIndex }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
 
   return (
     <Flex
@@ -33,6 +34,7 @@ const Header = ({ tabs, tabIndex }) => {
     >
       <Image
         src={logo}
+        onClick={() => navigate('/')}
         mb={{ '2xl': '24px' }}
         w={{ base: 'auto', md: '42px', lg: '50px', xl: '104px' }}
         h={{ base: 'auto', md: '42px', lg: '50px', xl: '104px' }}

@@ -68,13 +68,17 @@ const Destination = () => {
       }}
     >
       <Flex
+        alignItems='center'
+        fontSize='24px'
         gap='12px'
-        fontSize='20px'
-        fontFamily='heading'
-        ms={{ lg: '96px' }}
-        color='color.gray.light'
       >
-        01<Text color='white'>PICK YOUR DESTINATION</Text>
+        <Text fontFamily='heading' fontWeight='700' color='gray.500'>
+          01
+        </Text>
+
+        <Text textTransform='uppercase' color='white'>
+          pick your destination
+        </Text>
       </Flex>
 
       <Flex

@@ -56,16 +56,18 @@ const Crew = () => {
         '2xl': '40px 192px 0px',
       }}
       overflow='hidden'
-      h={{ base: '90vh', md: '634px', lg: '500px', }}
+      h={{ base: '90vh', md: '774px', lg: '500px' }}
     >
       <Flex
+        alignItems='center'
+        fontSize='24px'
+        justifyContent={{ base: 'center', lg: 'left' }}
         gap='12px'
-        fontSize='20px'
-        fontFamily='heading'
-        ms={{ base: '40px', lg: '0px' }}
-        color='color.gray.light'
       >
-        02
+        <Text fontFamily='heading' fontWeight='700' color='gray.500'>
+          02
+        </Text>
+
         <Text textTransform='uppercase' color='white'>
           meet your crew
         </Text>
@@ -77,6 +79,7 @@ const Crew = () => {
         infiniteLoop={false}
         showArrows={false}
         showStatus={false}
+        showThumbs={false}
         onChange={handleSlideChange}
       >
         {crewInfo.map((crew, index) => (
@@ -121,9 +124,9 @@ const Crew = () => {
       >
         <Image
           src={crewImages[activeSlideIndex]}
-          maxW={{ base: '300px', md: '258px', lg: '360px', xl: '600px' }}
+          maxW={{ base: '300px', md: '362px', lg: '360px', xl: '600px' }}
           position='absolute'
-          right={{ base: '12%', md: '37%', lg: '6%', xl: '12%' }}
+          right={{ base: '12%', md: '26%', lg: '6%', xl: '12%' }}
           bottom='0px'
         />
       </Box>
